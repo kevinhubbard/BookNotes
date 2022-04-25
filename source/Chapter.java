@@ -1,8 +1,8 @@
 
 public class Chapter {
 
-	private String name;
-	private byte number;
+	private String chapName;
+	private byte chapNum;
 	private String summary;
 
 	public Chapter(String n, String s) {
@@ -11,11 +11,11 @@ public class Chapter {
 	}
 
 	public String getName() {
-		return name;
+		return chapName;
 	}
 
 	public String getNumber() {
-		String num = Byte.toString(number);
+		String num = Byte.toString(chapNum);
 		return num;
 	}
 
@@ -24,11 +24,11 @@ public class Chapter {
 	}
 
 	public void setName(String n) {
-		name = n;
+		chapName = n;
 	}
 
 	public void setNumber(String n) {
-		number = Byte.parseByte(n);
+		chapNum = Byte.parseByte(n);
 	}
 
 	public void setSummary(String n) {

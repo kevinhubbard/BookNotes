@@ -1,13 +1,14 @@
 import java.util.*;
+import java.io.*;
 
-public class Book {
+public class Book implements Serializable {
 	private String title;
-	private String numOfChapters;
+	private String author;
 	private ArrayList<Chapter> chapters;
 
-	public Book(String t, String n) {
-		setBookName(t);
-		setNumOfChapters(n);
+	public Book(String t, String a) {
+		setTitle(t);
+		setAuthor(a);
 	}
 
 	public void addChapter(String n, String s) {
@@ -15,20 +16,20 @@ public class Book {
 		chapters.add(c);
 	}
 	
-	public String getBookName() {
+	public String getTitle() {
 		return title;
 	}
 
-	public String getNumOfChapters() {
-		return numOfChapters;
+	public String getAuthor() {
+		return author;
 	}
 
-	public void setBookName(String s) {
+	public void setTitle(String s) {
 		title = s;
 	}
 
-	public void setNumOfChapters(String n) {
-		numOfChapters = n;
+	public void setAuthor(String n) {
+		author = n;
 	}
 
 }
