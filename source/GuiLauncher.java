@@ -7,7 +7,6 @@ import java.util.*;
 public class GuiLauncher {
 	JFrame frame = new JFrame("Book Notes");
 	JPanel optionPane = new JPanel();
-	//private int currentCard = 1;
 	private CardLayout cl;
 	private JPanel cardPanel;
 
