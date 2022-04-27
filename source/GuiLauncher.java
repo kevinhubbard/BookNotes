@@ -5,8 +5,8 @@ import java.io.*;
 import java.util.*;
 
 public class GuiLauncher {
-	JFrame frame = new JFrame("Book Notes");
-	JPanel optionPane = new JPanel();
+	private JFrame frame = new JFrame("Book Notes");
+	private JPanel optionPane = new JPanel();
 	private CardLayout cl;
 	private JPanel cardPanel;
 
@@ -39,11 +39,7 @@ public class GuiLauncher {
 		return cardPanel;
 	}
 
-
-
 	public void createGui() {
-		
-		
 		frame.setSize(new Dimension(500,500));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(BorderLayout.NORTH, createTopPanel());
