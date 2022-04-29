@@ -13,13 +13,10 @@ public class GuiLauncher {
 
 	public JPanel createTopPanel() {
 		JButton addBook = new JButton("Add Book");
-		//JButton loadBook = new JButton("Load Book");
 		JButton editBook = new JButton("Edit Book");
 		optionPane.add(addBook);
-		//optionPane.add(loadBook);
 		optionPane.add(editBook);
 		addBook.addActionListener(new AddListener());
-		//loadBook.addActionListener(new LoadListener());
 		editBook.addActionListener(new EditListener());
 
 		return optionPane;
@@ -30,10 +27,8 @@ public class GuiLauncher {
 		cl = new CardLayout();
 		cardPanel.setLayout(cl);
 		BookPane bp = new BookPane();
-		//LoadPane lp = new LoadPane();
 		EditPane ep = new EditPane();
 		cardPanel.add(bp, "1");
-		//cardPanel.add(lp, "2");
 		cardPanel.add(ep, "2");
 
 		return cardPanel;
@@ -47,8 +42,6 @@ public class GuiLauncher {
 		frame.setVisible(true);
 	}
 
-
-
 	public static void main(String[] args) {
 		GuiLauncher launch = new GuiLauncher();
 		launch.createGui();
@@ -60,12 +53,7 @@ public class GuiLauncher {
 			cl.show(cardPanel, "1");
 		}
 	}
-/*	public class LoadListener implements ActionListener {
-		public void actionPerformed(ActionEvent e) {
-			System.out.println("load");
-			cl.show(cardPanel, "2");
-		}
-	}*/
+
 	public class EditListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("edit");
