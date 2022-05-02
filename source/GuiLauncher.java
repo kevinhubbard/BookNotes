@@ -10,6 +10,11 @@ public class GuiLauncher {
 	private CardLayout cl;
 	private JPanel cardPanel;
 
+	public static void main(String[] args) {
+		GuiLauncher launch = new GuiLauncher();
+		launch.createGui();
+	}
+
 
 	public JPanel createTopPanel() {
 		JButton addBook = new JButton("Add Book");
@@ -42,7 +47,7 @@ public class GuiLauncher {
 		frame.setVisible(true);
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		GuiLauncher launch = new GuiLauncher();
 		launch.createGui();
 	}
