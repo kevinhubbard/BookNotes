@@ -47,11 +47,6 @@ public class GuiLauncher {
 		frame.setVisible(true);
 	}
 
-		public static void main(String[] args) {
-		GuiLauncher launch = new GuiLauncher();
-		launch.createGui();
-	}
-
 	public class AddListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("add");
